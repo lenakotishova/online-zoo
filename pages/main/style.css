@@ -6,14 +6,19 @@
 
 body {
     width: 1600px;
-    text-align: center;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: underline;
 }
 
 .landing {
     width: 1600px;
     margin: 0 auto;
-    
+
 }
+
 .flex-layout {
     margin-left: 220px;
     width: 973px;
@@ -24,6 +29,7 @@ body {
     align-items: center;
     vertical-align: middle;
 }
+
 header {
     height: 80px;
     background-color: black;
@@ -32,8 +38,9 @@ header {
 
 .logo, .nav, .designed-by {
     display: inline-block;
-    vertical-align:middle;
+    vertical-align: middle;
 }
+
 .logo {
     width: 82px;
     padding-right: 58px;
@@ -43,7 +50,8 @@ header {
     text-decoration: none;
     color: #FFFFFF;
 }
-.logo h1 {
+
+.logo h2 {
     border: 1.18841px solid #FFFFFF;
     text-decoration: none;
     font-family: 'Roboto';
@@ -51,7 +59,9 @@ header {
     font-weight: 400;
     font-size: 19.0145px;
     line-height: 120%;
+    text-align: center;
 }
+
 nav {
     float: right;
     line-height: 140%;
@@ -62,7 +72,7 @@ nav a {
     text-decoration: none;
 }
 
- header li {
+header li {
     list-style: none;
     display: inline-block;
     padding: 0 38px;
@@ -74,9 +84,9 @@ nav a {
 
     color: #FFFFFF;
 
- }
+}
 
- #about {
+#about {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -89,12 +99,13 @@ nav a {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-emphasis-color: transparent;
- }
+}
 
- .designed-by {
-    margin-left: auto; }
+.designed-by {
+    margin-left: auto;
+}
 
- .designed-by a {
+.designed-by a {
 
     text-decoration: none;
     height: 22px;
@@ -105,24 +116,26 @@ nav a {
     font-weight: 500;
     font-size: 16px;
     color: #FFFFFF;
- }
+}
 
- .intro-page {
+.watch-your-favorite-animal-online {
     background-color: black;
     height: 780px;
-    position: relative;
     background-image: url(/assets/images/Giant\ Panda.png);
- }
+}
+
 .intro-text, .intro-circle {
     position: absolute;
 }
+
 .intro-text {
     width: 500.31px;
     height: 400px;
     padding-left: calc(50% - 500.31px/2 + 330.15px);
     padding-top: 166px;
 }
- .intro-circle {
+
+.intro-circle {
     width: 465px;
     height: 465px;
     left: calc(50% - 465px/2 + 239.5px);
@@ -131,8 +144,9 @@ nav a {
 
     /* orange */
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
- }
- .intro-text h1 {
+}
+
+.intro-text h1 {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
@@ -141,23 +155,259 @@ nav a {
 
     text-align: center;
     text-transform: uppercase;
-    
+
     color: #FFFFFF
- }
+}
 
- .yellow-text {
+.yellow-text {
     color: yellow;
- }
+}
 
- .orange-button {
+.orange-btn {
+    display: inline-block;
     position: absolute;
     width: 298px;
     height: 54px;
     left: calc(50% - 298px/2 + 332px);
     top: 626px;
 
+    text-decoration: none;
+    text-align: start;
+
     /* orange */
     background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
     border-radius: 25px;
     border: #FFFFFF;
- }
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 54px;
+    text-align: center;
+    outline: none;
+    user-select: none;
+    color: #FFFFFF;
+
+    text-transform: uppercase;
+}
+
+.purpose-page {
+    display: flex;
+    height: 403px;
+    margin: 140px 0 180px 219px;
+}
+
+.old-man-picture {
+    width: 609px;
+    height: 403px;
+    left: 0px;
+    top: 0px;
+    align-items: center;
+
+    background: url(bamboo-cap-4767687_1920.jpg);
+    backdrop-filter: blur(2px);
+}
+
+.purpose-text {
+    padding-left: 87px;
+    text-align: left;
+    align-items: center;
+
+}
+
+.purpose-text h2 {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+
+    color: #333B41;
+}
+
+.purpose-text h3 {
+    height: 42px;
+    left: 696px;
+    right: 0px;
+    top: 136px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    /* or 21px */
+
+    color: #333B41;
+}
+
+.purpose-text h4 {
+    height: 105px;
+    left: 696px;
+    right: 0px;
+    top: 295px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #333B41;
+}
+
+.flower-img {
+    margin-left: auto;
+}
+
+.pets {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.pets-set {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 852px;
+}
+
+.arrow-btn {
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    width: 62px;
+    height: 62px;
+    margin: 1em auto;
+    border-radius: 50%;
+    text-align: center;
+    color: white;
+}
+
+.arrow-btn::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    padding-top: 100%;
+}
+
+.arrow-btn a {
+    text-decoration: none;
+
+}
+
+.animal-cards-set {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    width: 1158px;
+}
+
+.animal-card {
+    height: 50%;
+    width: 29%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 15px 10px;
+    border-radius: 5px;
+    border: 1px solid #FE9013;
+}
+
+.card-img {
+    width: 100%;
+    align-self: flex-start;
+}
+
+.card-desc {
+    width: 70%;
+}
+
+.animal-card h4 {
+    padding: 8px 16px 4px 16px;
+    text-align: start;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #000000;
+}
+
+.animal-card-link {
+    padding: 8px 16px 4px 16px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.animal-card-icon {
+    width: 20%;
+    align-items: center;
+}
+
+.choose-your-favorite-button {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    align-self: end;
+    justify-content: center;
+    margin: 40px;
+}
+
+.choose-your-favorite-button-link {
+    background: #FE9013;
+    text-align: center;
+    color: white;
+
+    width: 298px;
+    height: 54px;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: start;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 54px;
+    text-align: center;
+    outline: none;
+    user-select: none;
+    color: #FFFFFF;
+
+    text-transform: uppercase;
+}
+
+.pets-btn-and-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.palm-strelitzia {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -350px;
+
+}
+#palm-img {
+    align-items: flex-start;
+}
+
+#strelitzia-img {
+    align-items: flex-end;
+    align-self: flex-end;
+}
