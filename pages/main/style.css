@@ -15,27 +15,27 @@ body {
     
 }
 .flex-layout {
+    margin-left: 220px;
+    width: 973px;
+
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    vertical-align:middle;
 }
 header {
     height: 80px;
     background-color: black;
     width: 1600px;
-    align-items: center;
     display: flex;
-    justify-content: center;
-
-
+    padding: 20px 50px;
 }
 
-.flex-layout {
-    display: flex;
-    align-items: center;
+.logo, .nav, .designed-by {
+    display: inline-block;
+    vertical-align:middle;
 }
-
 .logo {
     width: 82px;
     padding-right: 58px;
@@ -62,13 +62,12 @@ nav {
 
 nav a {
     text-decoration: none;
-    float: right;
-
 }
+
  header li {
     list-style: none;
     display: inline-block;
-    padding: 0 58px;
+    padding: 0 38px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -92,4 +91,20 @@ nav a {
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-emphasis-color: transparent;
+ }
+
+ .designed-by {
+margin-left: auto; }
+
+ .designed-by a {
+
+    text-decoration: none;
+    height: 22px;
+    line-height: 22px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
  }
