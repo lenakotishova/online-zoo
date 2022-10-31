@@ -123,7 +123,7 @@ header li {
 .watch-your-favorite-animal-online {
     background-color: black;
     height: 780px;
-    background-image: url(/online-zoo/assets/images/Giant_Panda.png);
+    background-image: url(./assets/images/Giant_Panda.png);
     position: relative;
 }
 
