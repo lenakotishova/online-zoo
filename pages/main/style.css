@@ -134,7 +134,7 @@ header li {
 .watch-your-favorite-animal-online {
     background-color: black;
     height: 780px;
-    background-image: url(/assets/images/Giant_Panda.png);
+    background-image: url(../assets/images/Giant_Panda.png);
     position: relative;
 }
 
@@ -895,8 +895,13 @@ form #email {
     border: 1px solid orange;
 }
 
-#email::placeholder {
+#email > input::placeholder {
     padding: 10px;
+   
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #BDBDBD;
 
     font-family: 'Roboto';
     font-style: normal;
