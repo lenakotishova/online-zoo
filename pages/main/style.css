@@ -18,18 +18,17 @@ a:visited {
     cursor: pointer;
     text-decoration: none;
     color: white;
+
 }
 a:hover {
     cursor: pointer;
     text-decoration: none;
-    color: white;
-    font-size: 150px;
+    font-size: 120%;
 }
 a:active {
     cursor: pointer;
     text-decoration: none;
-    color: white;
-    font-size: 150px;
+    font-size: 120%;
 }
 
 .landing {
@@ -89,10 +88,6 @@ header nav {
     margin-right: 350px;
 }
 
-nav a {
-    text-decoration: none;
-}
-
 header li {
     list-style: none;
     display: inline-block;
@@ -126,10 +121,7 @@ header li {
     margin-left: auto;
 }
 
-.designed-by a {
-
-    text-decoration: none;
-    height: 22px;
+.designed-by {
     line-height: 22px;
 
     font-family: 'Roboto';
@@ -360,7 +352,7 @@ header li {
     color: #000000;
 }
 
-.animal-card-link {
+.card-desc a {
     padding: 8px 16px 4px 16px;
     text-decoration: none;
     font-family: 'Roboto';
@@ -457,6 +449,16 @@ header li {
 .area-descr {
     text-align: start;
     padding: 0 80px;
+}
+
+.area-descr a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #333B41;
 }
 
 .feed-card-set {
@@ -825,6 +827,29 @@ footer form #email {
     border-radius: 2px;
 }
 
+input[type=text] {
+    color: white;
+    font-size: 16px;
+}
+
+input:invalid {
+    color: white;
+    font-size: 18px;
+}
+
+input:valid {
+    color: white;
+    font-size: 18px;
+}
+
+input:focus {
+    color: white;
+    font-size: 18px;
+}
+
+input.typed {
+    color: white;
+}
 .subscribe {
     align-self: flex-start;
 }
