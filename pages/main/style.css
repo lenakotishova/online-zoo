@@ -8,9 +8,28 @@ body {
     width: 1600px;
 }
 
-a {
+a:link {
     cursor: pointer;
-    text-decoration: underline;
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 150px;
+}
+a:active {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+    font-size: 150px;
 }
 
 .landing {
@@ -63,7 +82,7 @@ header {
     text-align: center;
 }
 
-nav {
+header nav {
     float: right;
     line-height: 140%;
     color: #FFFFFF;
@@ -123,7 +142,7 @@ header li {
 .watch-your-favorite-animal-online {
     background-color: black;
     height: 780px;
-    background-image: url(./assets/images/Giant_Panda.png);
+    background-image: url(/assets/images/Giant_Panda.png);
     position: relative;
 }
 
@@ -549,6 +568,18 @@ header li {
     justify-content: center;
 }
 
+.testimonials h3 {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 47px;
+
+text-align: center;
+
+color: #333B41;
+
+}
 .testimonial-card-set {
     display: flex;
     flex-direction: row;
@@ -558,19 +589,19 @@ header li {
 
 .testimonial-card {
     width: 21%;
-    height: auto;
+    height: 391px;
     margin: 20px;
 
     border-radius: 10px;
     border: 2px solid linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
 
     display: grid;
-    grid-template-columns: 25% auto auto auto auto;
+    grid-template-columns: 25% 40% 3% auto;
     grid-template-rows: auto auto 90%;
     grid-template-areas:
-        "profile-photo name . . ."
-        "profile-photo local symbol time ."
-        "descr descr descr descr descr";
+        "profile-photo name name name"
+        "profile-photo local symbol time"
+        "descr descr descr descr";
 
     background: linear-gradient(0deg, #F1F3F2, #F1F3F2),
         linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
@@ -579,7 +610,7 @@ header li {
 
 .spacer {
     grid-area: symbol;
-    padding: 5px;
+    margin-right: 15px;
 
 }
 
@@ -628,8 +659,12 @@ header li {
 .feedback {
     grid-area: descr;
     text-align: left;
-    margin: 0 20px 20px 20px;
+    margin: -50px 20px 20px 20px;
 
+    height: 75%;
+
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .feedback h5 {
@@ -641,6 +676,8 @@ header li {
     line-height: 24px;
 
     color: #767474;
+
+
 }
 
 .testimonial-wrapper {
@@ -679,13 +716,13 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .column1 {
     display: flex;
     flex-direction: column;
-    margin: 40px;
+    margin: 20px;
 }
 
 footer .logo {
@@ -707,14 +744,38 @@ footer .logo {
 
     list-style: none;
     color: #FFFFFF;
+}
+
+.column1 li .li-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 5px;
+}
+.column1 .social-networks li .circle {
+    border: 0.5px solid rgba(196, 196, 196, 0.5);
+    background-color: rgba(196, 196, 196, 0.5);
+    border-radius: 50%;
+
+    width: 26px;
+    height: 26px;
 
 }
 
+.column1 .social-networks li a {
+    margin: 5px;
+}
+.circle img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 .column2 nav {
+    display: contents;
+
     float: right;
     line-height: 140%;
     color: #FFFFFF;
-    display: inline;
     margin-bottom: 20px;
 }
 
@@ -765,7 +826,7 @@ footer form #email {
 }
 
 .subscribe {
-    align-items: flex-start;
+    align-self: flex-start;
 }
 #submit {
     background: #F1F3F2;
@@ -779,4 +840,60 @@ width: 129px;
 
 progress {
     width: 300px;
+}
+
+.column3 {
+    height: 443px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+}
+.design-footer {
+    align-self: flex-start;
+
+}
+
+.design-footer p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+}
+form #email {
+    border-radius: 2px;
+    width:229px;
+    height: 42px;
+    border-radius: 2px;
+    border: 1px solid orange;
+}
+
+#email::placeholder {
+    padding: 10px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+
+    /* Gray 4 */
+    color: #BDBDBD;
+
+}
+
+#submit {
+    width: 129px;
+    height: 42px;
+
+    margin: 10px;
+    opacity: 4;
+    background: #F1F3F2;
+    /* Green */
+    border: 1px solid #4B9200;
+    border-radius: 5px;
+
+    color:#4B9200;
 }
