@@ -775,3 +775,8 @@ border-radius: 5px;
 box-sizing: border-box;
 width: 129px;
 }
+
+
+progress {
+    width: 300px;
+}
